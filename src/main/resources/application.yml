@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: "local"
+  datasource:
+      username: "postgres"
+      password: "admin1953"
+      url: "jdbc:postgresql://localhost:5432/contacts"
+      driver-class-name: "org.postgresql.Driver"
+  jpa:
+    properties:
+      hibernate:
+      #dialect: "com.micropact.platform.studio.hibernate.PostgresDialect"
+      #show_sql: true
+      #use_sql_comments: true
+      #format_sql: true
