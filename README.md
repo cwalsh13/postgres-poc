@@ -1,12 +1,14 @@
 # postgres-poc
 
-Simple Spring Boot application that connects to a PostgreSQL database and queries some data.
+Simple Spring Boot web application that connects to a PostgreSQL database and queries some data.
 
 ## Running in Gitpod
 
 https://gitpod.io/#https://github.com/cwalsh13/postgres-poc
 
-The app should open in an IDE and execute the "bootRun" command in a terminal.  If the terminal output displays the line "Found 1 contacts in the DB" then the run is successful.
+The app should open in an IDE and execute the "bootRun" command in a terminal.  This starts a web application with a single page, which queries the number of contacts in the database (should be 1 by default).
+
+If the website does not automatically open in the browser, you can get the URL by running "gp url" in the terminal, then prepending "8080-" to it.  For example: "https://8080-cwalsh13-postgrespoc-1crrvz2qaqn.ws-us47.gitpod.io/"
 
 ## Dev environment
 

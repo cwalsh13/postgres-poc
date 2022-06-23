@@ -9,7 +9,7 @@ image: gitpod/workspace-postgres
 
 ports:
   - port: 8080
-    onOpen: ignore
+    onOpen: open-browser
   - port: 5432
     onOpen: ignore
 
