@@ -2,6 +2,8 @@ tasks:
   - init: ./gradlew build
     command: ./gradlew bootRun
     name: Run app
+  - init: psql -f db-init.sql
+    name: Initialize DB
 
 image:
   file: .gitpod.dockerfile
