@@ -3,6 +3,15 @@ tasks:
     command: ./gradlew bootRun
     name: Run app
 
+image:
+  file: .gitpod.dockerfile
+
+ports:
+  - port: 8080
+    onOpen: ignore
+  - port: 5432
+    onOpen: ignore
+
 vscode:
   extensions:
     - redhat.java
