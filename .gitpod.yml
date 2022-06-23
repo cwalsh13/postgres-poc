@@ -1,0 +1,11 @@
+tasks:
+  - init: ./gradlew build
+    command: ./gradlew bootRun
+    name: Run app
+
+vscode:
+  extensions:
+    - redhat.java
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-test
+    - pivotal.vscode-spring-boot

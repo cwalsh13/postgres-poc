@@ -1,14 +1,14 @@
-import com.micropact.gradle.license.DefaultLicense
-
 plugins {
-    kotlin("jvm")
-    kotlin("plugin.jpa")
-    kotlin("plugin.serialization")
-    kotlin("plugin.spring")
+    kotlin("jvm") version "1.7.0"
+    kotlin("plugin.jpa") version "1.7.0"
+    kotlin("plugin.serialization") version "1.7.0"
+    kotlin("plugin.spring") version "1.7.0"
     id("org.springframework.boot") version "2.6.7"
 }
 
-group = "com.micropact.platform"
+repositories {
+    mavenCentral()
+}
 
 dependencyLocking {
     lockAllConfigurations()
