@@ -5,8 +5,7 @@ tasks:
     command: ./gradlew bootRun
     name: Run app
 
-image:
-  file: .gitpod.dockerfile
+image: gitpod/workspace-postgres
 
 ports:
   - port: 8080
