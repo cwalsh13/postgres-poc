@@ -1,7 +1,18 @@
 tasks:
-  - init: ./gradlew build
+  - init: psql -f db-init.sql
+    name: Initialize DB
+  - init: ./gradlew bootJar
     command: ./gradlew bootRun
     name: Run app
+
+image:
+  file: .gitpod.dockerfile
+
+ports:
+  - port: 8080
+    onOpen: ignore
+  - port: 5432
+    onOpen: ignore
 
 vscode:
   extensions:
@@ -9,3 +20,4 @@ vscode:
     - vscjava.vscode-java-debug
     - vscjava.vscode-java-test
     - pivotal.vscode-spring-boot
+    - fwcd.kotlin
