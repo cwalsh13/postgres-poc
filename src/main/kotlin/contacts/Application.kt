@@ -6,6 +6,7 @@ import org.springframework.boot.runApplication
 import org.springframework.context.ApplicationContextInitializer
 import org.springframework.context.support.GenericApplicationContext
 import org.springframework.context.support.beans
+import HtmlController
 
 /**
  * Main.
@@ -17,6 +18,7 @@ class Application
 
 val beans = beans {
     bean { ContactService(ref()) }
+    bean { HtmlController(ref()) }
 }
 
 class BeansInitializer : ApplicationContextInitializer<GenericApplicationContext> {

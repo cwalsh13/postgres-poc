@@ -27,6 +27,9 @@ dependencies {
     implementation(libs.spring.boot.data.jpa)
     implementation(libs.spring.boot.validation)
 
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-mustache")
+
     runtimeOnly(libs.postgresql)
 }
 
